@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" type="text/css" href="st.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="#"  class="active " >Elmahdi KARBAL</a>
+        <a href="#home" style="margin-left:350px;">Accueil</a>
+       <a href="#portfolio" style="margin-left: 8px;">Portfolio</a>
+       <a href="#education" style="margin-left: 8px;">Education</a>
+        <a href="#contact" style="margin-left: 8px;">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<header>
+<video autoplay muted loop id="myVideo">
+          <source src="vb.mp4" type="video/mp4">
+</video>
+<div class="content">
+  <h1>Elmahdi KARBAL</h1>
+  <p>Développeur full Stack</p>
+  <button id="myBtn" onclick="myFunction()">Télècharger le CV</button>
+</div>
+</header>
+<section id="portfolio">
+<div class="main">
+  <h1>Portfolio</h1>
+  <ul class="cards">
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="images/WD.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Web Design</h2>
+          <p class="card_text">Web Designer</p>
+          <button class="btn card_btn">View Projects</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="images/webb.png"></div>
+        <div class="card_content">
+          <h2 class="card_title">Web Developer </h2>
+          <p class="card_text">Developpeur Web PHP/Laravel</p>
+          <button class="btn card_btn">View Projects</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="images/dba.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Data Administrator </h2>
+          <p class="card_text">Oracle PL/SQL SQL </p>
+          <button class="btn card_btn">View Projects</button>
+        </div>
+      </div>
+    </li>
+    </section>
+    <section id="education">
+      
+        <table id="tab">
+          <h1> Education</h1>
+           
+          
+          <tr>
+            <th>Niveau</th>
+            <th>Ecole</th>
+            <th>Option</th>
+          </tr>
+          <tr>
+            <td>Licence Professionnelle </td>
+            <td>Ecole superieure de technologie-Safi </td>
+            <td>Métiers de l'informatique (MI)</td>
+          </tr>
+          <tr>
+            <td>Brevet de Technicien Supérieure </td>
+            <td>Lycee Alkhawarizmi-Safi </td>
+            <td>Systémes et Réseaux Informatiques (SRI)</td>
+          </tr>
+          <tr>
+            <td>Baccaleaureat </td>
+            <td>Lycee Alkhawarizmi-Safi </td>
+            <td>Sciences et Technologies Electricites (STE)</td>
+          </tr>
+          
+        </table>
+
+
+
+    </section>  
+    <section id="contact">
+      <h1>Contact</h1>
+          <div class="container">
+            <form action="#">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+             <label for="lname">Email</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your Email">
+
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+              <input type="submit" value="Send">
+            </form>
+          </div>
+    </section>
+    <footer>
+       <span>
+        <p>© 2019 Elmahdi KARBAL
+          <a href="https://www.facebook.com/profile.php?id=100004362790521"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://github.com/mekarbal"><i class="fab fa-github-square"></i></a>
+          <a href="https://www.linkedin.com/in/elmahdi-karbal-03a324115/"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-google-plus-square"></i></a>
+
+        </p>
+
+          
+        </span>
+    </footer>
+       
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
